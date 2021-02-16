@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3773EC25DC3F0F0093C34B /* LebronJamesStats.json in Resources */ = {isa = PBXBuildFile; fileRef = ED3773EB25DC3F0F0093C34B /* LebronJamesStats.json */; };
+		ED3773EF25DC42110093C34B /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3773EE25DC42110093C34B /* PlayerModel.swift */; };
+		ED3773F225DC42380093C34B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3773F125DC42380093C34B /* DataService.swift */; };
+		ED3773F625DC424C0093C34B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3773F525DC424C0093C34B /* Player.swift */; };
+		ED3773FC25DC45BA0093C34B /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3773FB25DC45BA0093C34B /* PlayerListView.swift */; };
+		ED37740025DC50180093C34B /* PlayerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3773FF25DC50180093C34B /* PlayerStatsView.swift */; };
 		EDA3457125D3440F0007725F /* BasketballCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3457025D3440F0007725F /* BasketballCardsApp.swift */; };
-		EDA3457325D3440F0007725F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3457225D3440F0007725F /* ContentView.swift */; };
+		EDA3457325D3440F0007725F /* PlayerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3457225D3440F0007725F /* PlayerTabView.swift */; };
 		EDA3457525D344100007725F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA3457425D344100007725F /* Assets.xcassets */; };
 		EDA3457825D344100007725F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA3457725D344100007725F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED3773EB25DC3F0F0093C34B /* LebronJamesStats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LebronJamesStats.json; sourceTree = "<group>"; };
+		ED3773EE25DC42110093C34B /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		ED3773F125DC42380093C34B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		ED3773F525DC424C0093C34B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		ED3773FB25DC45BA0093C34B /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		ED3773FF25DC50180093C34B /* PlayerStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsView.swift; sourceTree = "<group>"; };
 		EDA3456D25D3440F0007725F /* BasketballCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA3457025D3440F0007725F /* BasketballCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballCardsApp.swift; sourceTree = "<group>"; };
-		EDA3457225D3440F0007725F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDA3457225D3440F0007725F /* PlayerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTabView.swift; sourceTree = "<group>"; };
 		EDA3457425D344100007725F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA3457725D344100007725F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDA3457925D344100007725F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +45,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED3773E325DC3EC80093C34B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ED3773EB25DC3F0F0093C34B /* LebronJamesStats.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ED3773E425DC3ECC0093C34B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED3773F125DC42380093C34B /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED3773E525DC3ED30093C34B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED3773F525DC424C0093C34B /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED3773E625DC3EDC0093C34B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED3773EE25DC42110093C34B /* PlayerModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED3773E725DC3EE70093C34B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDA3457225D3440F0007725F /* PlayerTabView.swift */,
+				ED3773FB25DC45BA0093C34B /* PlayerListView.swift */,
+				ED3773FF25DC50180093C34B /* PlayerStatsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EDA3456425D3440F0007725F = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				EDA3457025D3440F0007725F /* BasketballCardsApp.swift */,
-				EDA3457225D3440F0007725F /* ContentView.swift */,
+				ED3773E725DC3EE70093C34B /* Views */,
+				ED3773E625DC3EDC0093C34B /* ViewModels */,
+				ED3773E525DC3ED30093C34B /* Models */,
+				ED3773E425DC3ECC0093C34B /* Services */,
+				ED3773E325DC3EC80093C34B /* Data */,
 				EDA3457425D344100007725F /* Assets.xcassets */,
 				EDA3457925D344100007725F /* Info.plist */,
 				EDA3457625D344100007725F /* Preview Content */,
@@ -128,6 +186,7 @@
 			files = (
 				EDA3457825D344100007725F /* Preview Assets.xcassets in Resources */,
 				EDA3457525D344100007725F /* Assets.xcassets in Resources */,
+				ED3773EC25DC3F0F0093C34B /* LebronJamesStats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA3457325D3440F0007725F /* ContentView.swift in Sources */,
+				ED3773EF25DC42110093C34B /* PlayerModel.swift in Sources */,
+				ED3773FC25DC45BA0093C34B /* PlayerListView.swift in Sources */,
+				EDA3457325D3440F0007725F /* PlayerTabView.swift in Sources */,
 				EDA3457125D3440F0007725F /* BasketballCardsApp.swift in Sources */,
+				ED3773F625DC424C0093C34B /* Player.swift in Sources */,
+				ED3773F225DC42380093C34B /* DataService.swift in Sources */,
+				ED37740025DC50180093C34B /* PlayerStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
